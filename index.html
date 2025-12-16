@@ -3,65 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Pizzeria Bella Napoli</title>
-  <style>
-    body { font-family: Arial, sans-serif; background:#f4f4f4; }
-    header { padding:20px; background:#222; color:#fff; }
-    nav button { margin:5px; padding:10px; }
-    .tab-content { display:none; padding:20px; }
-    .active { display:block; }
-    .tm-list-item { display:flex; background:#fff; margin-bottom:10px; padding:10px; }
-    .tm-list-item img { width:120px; margin-right:15px; }
-    .tm-list-item-price { float:right; }
-  </style>
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab-content').forEach(d => d.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </head>
 <body>
+
 <header>
   <h1>Pizzeria Bella Napoli</h1>
-  <nav>
-    <button onclick="showTab('Pizze')">Pizze</button>
-    <button onclick="showTab('Dolci')">Dolci</button>
-    <button onclick="showTab('Bevande')">Bevande</button>
-  </nav>
 </header>
 
-<!-- ================== PIZZE (Sviluppatore A) ================== -->
-<div id="Pizze" class="tab-content active">
-  <div class="tm-list-item">
-    <img src="img/margherita.jpg" alt="Margherita">
-    <div>
-      <h3>Pizza Margherita <span class="tm-list-item-price">€6.00</span></h3>
-      <p>Pomodoro, mozzarella, basilico.</p>
-    </div>
-  </div>
-</div>
+<!-- SEZIONE PIZZE -->
 
-<!-- ================== DOLCI (Sviluppatore B) ================== -->
-<div id="Dolci" class="tab-content">
-  <div class="tm-list-item">
-    <img src="img/tiramisu.jpg" alt="Tiramisù">
-    <div>
-      <h3>Tiramisù <span class="tm-list-item-price">€4.50</span></h3>
-      <p>Dolce tradizionale italiano al mascarpone.</p>
-    </div>
-  </div>
-</div>
+<!-- SEZIONE DOLCI -->
 
-<!-- ================== BEVANDE (Sviluppatore C) ================== -->
-<div id="Bevande" class="tab-content">
-  <div class="tm-list-item">
-    <img src="img/espresso.png" alt="Caffè Espresso">
-    <div>
-      <h3>Caffè Espresso <span class="tm-list-item-price">€2.50</span></h3>
-      <p>Miscela arabica di qualità superiore.</p>
-    </div>
-  </div>
-</div>
+<!-- SEZIONE BEVANDE -->
 
 </body>
 </html>
